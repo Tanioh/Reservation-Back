@@ -1,0 +1,97 @@
+============================================================
+       TODO SPRINT 1 - Réservation Voiture
+       Date : Février 2026
+============================================================
+
+ÉQUIPE :
+  - ETU3271 : Steven (Backend / Base de données)
+  - ETU3253 : Jaona (Frontend / Intégration Vue.js)
+  - ETU3 : Avotsoa (DevOps / Tests / Documentation)
+
+============================================================
+TÂCHES RÉALISÉES
+============================================================
+
+[x] ETU3271 - Conception de la base de données PostgreSQL
+    → Tables : hotel, client, voiture, reservation
+    → Script : sql/create_database.sql
+    → Statut : TERMINÉ
+
+[x] ETU3271 - Script d'insertion des hôtels et données de test
+    → 10 hôtels, 5 clients, 12 voitures, 10 réservations
+    → Script : sql/insert_data.sql
+    → Statut : TERMINÉ
+
+[x] ETU3271 - BackOffice : couche DAO (accès données)
+    → HotelDAO, ReservationDAO, ClientDAO, VoitureDAO
+    → Requêtes SQL avec filtres par date et statut
+    → Statut : TERMINÉ
+
+[x] ETU3253 - BackOffice : contrôleurs MVC (jframework)
+    → ReservationController (CRUD complet + filtre par date)
+    → HotelController (CRUD)
+    → Statut : TERMINÉ
+
+[x] ETU3253 - BackOffice : vues JSP (interface admin)
+    → Liste réservations avec filtres date + statut
+    → Formulaire création/modification réservation
+    → Détail réservation avec changement de statut
+    → Gestion hôtels (liste + formulaire)
+    → Statut : TERMINÉ
+
+[x] ETU3271 - FrontOffice : entités JPA + repositories Spring Data
+    → Hotel, Client, Voiture, Reservation (JPA entities)
+    → ReservationRepository avec @Query filtres
+    → Statut : TERMINÉ
+
+[x] ETU3253 - FrontOffice : API REST (Spring Boot)
+    → GET/POST /api/reservations (avec filtres date)
+    → GET /api/reservations/clients
+    → GET /api/reservations/voitures
+    → Statut : TERMINÉ
+
+[x] ETU3253 - FrontOffice : pages Thymeleaf + Vue.js
+    → Page d'accueil (voitures disponibles)
+    → Liste réservations avec filtres Vue.js
+    → Formulaire nouvelle réservation (Vue.js)
+    → Statut : TERMINÉ
+
+[x] ETU3 - Configuration projet Maven (pom.xml)
+    → BackOffice : war + jframework.jar local
+    → FrontOffice : Spring Boot 3.2.2 + JPA + PostgreSQL
+    → Statut : TERMINÉ
+
+[x] ETU3 - Mise en place des branches Git
+    → Branche `staging` : développement local
+    → Branche `release` : déploiement production
+    → 2 repos séparés (backoffice + frontoffice)
+    → Statut : TERMINÉ
+
+[x] ETU3 - Fichiers de configuration
+    → database.properties (backoffice)
+    → application.properties (frontoffice)
+    → .gitignore pour les 2 projets
+    → Statut : TERMINÉ
+
+============================================================
+TÂCHES EN COURS / À FAIRE (Sprint 2)
+============================================================
+
+[ ] ETU3271 - Ajouter l'authentification au BackOffice (protégé)
+[ ] ETU3253 - Améliorer l'UI frontoffice (pagination, responsive)
+[ ] ETU3 - Écrire les tests unitaires (JUnit + Mockito)
+[ ] ETU3271 - Ajouter la gestion des paiements
+[ ] ETU3253 - Ajouter un tableau de bord (dashboard) BackOffice
+[ ] ETU3 - Mettre en place CI/CD (GitHub Actions)
+[ ] ETU3 - Dockeriser l'application (Docker Compose)
+
+============================================================
+NOTES
+============================================================
+- FrontOffice et BackOffice sont 2 projets DIFFÉRENTS (2 repos)
+- Ils partagent la MÊME base de données PostgreSQL
+- BackOffice : protégé (admin uniquement) → jframework MVC
+- FrontOffice : public (clients) → Spring Boot + Vue.js
+- Branches : `release` (production) / `staging` (local dev)
+- GitHub : https://github.com/Tanioh
+============================================================
