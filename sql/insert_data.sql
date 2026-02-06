@@ -49,13 +49,13 @@ INSERT INTO voiture (marque, modele, immatriculation, couleur, nb_places, prix_j
 -- ============================================================
 
 INSERT INTO reservation (id_client, id_voiture, date_debut, date_fin, montant_total, statut, commentaire) VALUES
-(1, 1, '2026-02-10', '2026-02-15', 175.00, 'CONFIRMEE', 'Réservation pour voyage d''affaires'),
-(2, 3, '2026-02-12', '2026-02-14', 60.00, 'EN_ATTENTE', 'Week-end à Lyon'),
-(3, 5, '2026-02-20', '2026-02-25', 425.00, 'CONFIRMEE', 'Vacances à Marseille'),
+(1, 1, '2026-02-10', '2026-02-15', 175.00, 'CONFIRMEE', 'Reservation pour voyage d''affaires'),
+(2, 3, '2026-02-12', '2026-02-14', 60.00, 'EN_ATTENTE', 'Week-end a Lyon'),
+(3, 5, '2026-02-20', '2026-02-25', 425.00, 'CONFIRMEE', 'Vacances a Marseille'),
 (4, 7, '2026-03-01', '2026-03-05', 200.00, 'EN_ATTENTE', NULL),
 (5, 9, '2026-03-10', '2026-03-12', 84.00, 'CONFIRMEE', 'Déplacement professionnel'),
-(1, 6, '2026-03-15', '2026-03-20', 450.00, 'EN_ATTENTE', 'Séjour à Chamonix'),
+(1, 6, '2026-03-15', '2026-03-20', 450.00, 'EN_ATTENTE', 'Sejour a Chamonix'),
 (2, 11, '2026-02-08', '2026-02-10', 64.00, 'TERMINEE', 'Visite Bordeaux'),
 (3, 2, '2026-01-25', '2026-01-28', 135.00, 'TERMINEE', NULL),
-(4, 4, '2026-01-15', '2026-01-18', 120.00, 'ANNULEE', 'Annulé pour raisons personnelles'),
+(4, 4, '2026-01-15', '2026-01-18', 120.00, 'ANNULEE', 'Annule pour raisons personnelles'),
 (5, 8, '2026-02-05', '2026-02-07', 150.00, 'CONFIRMEE', 'Voyage Strasbourg');
